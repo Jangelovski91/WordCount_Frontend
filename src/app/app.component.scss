@@ -1,0 +1,28 @@
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+}
+
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  width: 35%;
+  text-align: center;
+}
+
+th {
+  background-color: #2f9990;
+}
+
+.contest{
+  background-color: rgb(216, 208, 208);
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

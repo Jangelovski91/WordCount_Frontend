@@ -1,0 +1,24 @@
+
+<section class="grid-container">
+  <app-navbar></app-navbar>
+  <main class="contest">
+    <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+      <section class="users">
+        <table class="table" *ngIf= "showTable">
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let word of words">
+              <td>{{word.word}}</td>
+              <td>{{word.count}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+  </main>
+  <app-footer></app-footer>
+</section>
